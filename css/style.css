@@ -16,7 +16,7 @@ html,
 body {
   height: 100%;
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: #501563
   position: relative;
 }
 
@@ -24,7 +24,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  color: #001858
   letter-spacing: 0.05em;
 }
 
@@ -82,7 +82,7 @@ header a {
 
 header .inner {
   display: flex;
-  background-color: #fff;
+  background-color: #fff0ea;
   justify-content: space-between;
   padding: 15px 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
@@ -94,8 +94,8 @@ header .inner {
 footer
 ======================================================*/
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #fec7d7
+  color: #feeeed;
   text-align: center;
   padding: 20px;
   font-size: 10px;
@@ -130,31 +130,31 @@ footer {
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #ccc;
+  background-color: #d9d4e7
 }
 
 .top_eye_catch {
   height: 500px;
-  background-image: url(../images/top.jpg);
+  background-image: url(../images/233.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #feeeed;
   font-weight: bold;
 }
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/234.png);
   background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #feeeed;
   font-weight: bold;
 }
 
@@ -189,6 +189,28 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+.btn a {
+  width: 300px;
+  background-color: #000;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 15px 0;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.3);
+}
+
+
+.btn a:hover {
+  box-shadow: none;
+  transform: translate3d(0, 5px, 0);
+  transition-duration: 0.3s;
+  opacity: 0.8;
 }
 
 /*======================================================
@@ -241,10 +263,97 @@ report
   bottom: 0;
   margin: auto;
 }
+/*======================================================
+cv
+======================================================*/
+.cv {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
 
+.cv .outline {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.cv .outline .pic {
+  width: 45%;
+  border: 3px solid #999;
+}
+
+.cv .outline .txt {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.cv h1 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #ff9a02;
+}
+
+.ex_link {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  padding-left: 26px;
+}
+
+.ex_link::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: 3px solid #666;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 /*======================================================
 汎用
 ======================================================*/
 .mb_m {
   margin-bottom: 20px;
 }
+
+#case1{
+  border-left: 1px solid #000;
+  margin-left: 30px;
+  }
+  
+ #case1 li{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+ }
+  
+ #case1 li .year{
+  width: 80px;
+  display: flex;
+  align-items: center;
+ }
+  
+ #case1 li .year::before{
+  content: '';
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: rgb(255, 173, 173);
+  left: -7px;
+  margin-right: 5px;
+ }
+  
+ #case1 li .date{
+  width: 60px;
+ }
+  
+ #case1 li .content{
+  flex: 1;
+ }
+ 
